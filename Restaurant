@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom du Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Nom du Restaurant</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Bienvenue dans notre restaurant ! Nous proposons des plats savoureux et préparés avec des ingrédients frais et locaux.</p>
+        <img src="images/restaurant.jpg" alt="Image de notre restaurant">
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-item">
+            <h3>Plat 1</h3>
+            <p>Description du plat 1 - Prix</p>
+        </div>
+        <div class="menu-item">
+            <h3>Plat 2</h3>
+            <p>Description du plat 2 - Prix</p>
+        </div>
+        <div class="menu-item">
+            <h3>Plat 3</h3>
+            <p>Description du plat 3 - Prix</p>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Adresse : 123 Rue du Bon Goût, Ville</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+        <p>Email : contact@restaurant.com</p>
+        <form action="#">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Nom du Restaurant. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#menu .menu-item {
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Formulaire de contact */
+form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
